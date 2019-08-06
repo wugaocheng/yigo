@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
-/**
+/**逆向工程
  * @author ${user}
  * @create 2019-08-01 20:07
  **/
@@ -28,7 +28,7 @@ public class MybatisPlusGenerator {
 
     public void autoGeneration() {
         GlobalConfig config = new GlobalConfig();
-        String dbUrl = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8";
+        String dbUrl = "jdbc:mysql://localhost:3306/easybuy?serverTimezone=GMT%2B8";
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)
                 .setUrl(dbUrl)
@@ -44,8 +44,8 @@ public class MybatisPlusGenerator {
         config.setActiveRecord(false)
                 .setEnableCache(false)
                 .setAuthor("Ethan")
-                //指定输出文件夹位置
-                .setOutputDir("E:\\ideaapp\\yigo\\src\\main\\java")
+                //指定输出文件夹位置F:\youxiu\yigos\src\main\java
+                .setOutputDir("F:\\youxiu\\yigos\\src\\main\\java")
                 .setFileOverride(true)
                 .setServiceName("%sService");
         new AutoGenerator().setGlobalConfig(config)
